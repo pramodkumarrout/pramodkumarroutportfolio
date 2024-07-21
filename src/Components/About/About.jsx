@@ -11,7 +11,7 @@ const About = () => {
             <img src= {theme_pattern} alt = "" />
         </div>
 
-        <div className = "about=sections">
+        <div className = "about-sections">
             <div className = "about-left">
                 <img src= {profile_img} alt= "" />
             </div>
