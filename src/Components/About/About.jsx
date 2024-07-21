@@ -22,16 +22,16 @@ const About = () => {
                 <p> Proficient in modern web technologies including HTML5, CSS3, JavaScript, and framework React.js. Design interactive, responsive, and cross-browser compatible websites. Committed to staying updated with the latest trends and best practices in web development to deliver high-quality and performance-optimized solutions.</p>
                 </div>
                 <div className = "about-skills">
-                    <div className ="about-skill"> <p> HTML & CSS </p> <hr style={ {width:"90%"} } /> </div>
+                    <div className ="about-skill"> <p> HTML & CSS </p> <hr style={ {width:"70%"} } /> </div>
                     <div className ="about-skill"> <p> React JS </p> <hr style={ {width:"70%"} } /> </div>
                     <div className ="about-skill"> <p> JavaScript </p> <hr style={ {width:"60%"} } /> </div>
-                    <div className ="about-skill"> <p> Next JS </p> <hr style={ {width:"50%"} } /> </div>
+                    <div className ="about-skill"> <p> Next JS </p> <hr style={ {width:"70%"} } /> </div>
 
                 </div>
             </div>
         </div>
 
-        <div className ="about-achievemnets">
+        <div className ="about-achievements">
             <div className = "about-achievement">
                 <h1> 1+</h1>
                 <p> YEARS OF EXPERIENCE </p>
