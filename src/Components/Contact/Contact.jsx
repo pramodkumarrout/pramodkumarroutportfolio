@@ -33,7 +33,7 @@ const Contact = () => {
          </div>
          </div>
 
-         <form className = "contact-form">
+         <form className = "contact-right">
            <label htmlFor = ""> Your Name </label>
            <input type="text" placeholder='Enter your name' name='name' />
            <label htmlFor = ""> Your Email </label>
@@ -49,4 +49,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
