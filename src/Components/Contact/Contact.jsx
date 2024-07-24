@@ -7,6 +7,31 @@ import call_icon from '../../assets/call_icon.svg';
 
 
 const Contact = () => {
+
+   const onSubmit = async (event) => {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "1dc45de3-7c16-470d-a4df-4da32d8f2080");
+  
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+  
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      }).then((res) => res.json());
+  
+      if (res.success) {
+        alert(res.message);
+      }
+    };
+
+
   return (
     <div id='contact' className = 'contact'>
        <div className ="contact-title">
@@ -33,7 +58,7 @@ const Contact = () => {
          </div>
          </div>
 
-         <form className = "contact-right">
+         <form onSubmit= {onSubmit} className = "contact-right">
            <label htmlFor = ""> Your Name </label>
            <input type="text" placeholder='Enter your name' name='name' />
            <label htmlFor = ""> Your Email </label>
@@ -41,7 +66,7 @@ const Contact = () => {
            <label htmlFor=""> Write your message here </label>
            <textarea name="message" rows="8" placeholder='Enter your message' />
            
-           <button type="button" className ="contact-submit"> Submit now </button>
+           <button type="submit" className ="contact-submit"> Submit now </button>
          </form>
 
        </div>
