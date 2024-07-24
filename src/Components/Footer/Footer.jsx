@@ -6,6 +6,8 @@ import user_icon from '../../assets/user_icon.svg';
 
 
 const Footer = () => {
+
+    
   return (
     <div className = 'footer'>
 
